@@ -1,0 +1,119 @@
+<!--
+	Austin Allbee
+	Project V3
+	5/20/19
+	This is the loot crate page
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="mobileStyles.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<title>Star Wars loot crate</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1" >
+  <meta name="description" content= "Page about Star Wars loot crates">
+  <meta name="keywords" content="Star Wars">
+  <meta name="author" content="Austin Allbee">
+</head>
+<body>	
+	<header>
+		<h1>Loot Crates</h1>
+		<nav>
+			<a id="navicon" href="#"><img src="navicon.png" alt=""></a>
+			<ul>
+				<li><a href="index.html">Home page</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="lootcrate.html">Loot Crates</a></li>
+				<li><a href="about.html">About page</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+
+
+	<h1>Availible loot crate subscriptions</h1>
+	<!-- M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
+		i made a table for loot crate prices and what's in a loot crate -->
+	<table>
+		<colgroup>
+            <col id="firstCol">
+            <col class="infoCols" span="4">
+         </colgroup>
+		<thead>
+			<tr>
+				<th>what's in the loot crate</th>
+				<th>Youngling Loot Crate</th>
+				<th>Padawan Loot Crate</th>
+				<th>Knight Loot Crate</th>
+				<th>Grand Master Loot Crate</th>
+			</tr>
+			
+		</thead>
+		<tfoot>
+			<tr>
+				<th>Price</th>
+				<td>$15 per mo</td>
+				<td>$25 per mo</td>
+				<td>$40 per mo</td>
+				<td>$70 per mo</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<th>Unique Funko pop figure</th>
+				<!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+					this spans multiple columns because all 4 rows say Yes -->
+				<td colspan="4">Yes</td>
+				
+			</tr>
+			<tr>
+				<th>Star Wars Comic Book</th>
+				<td colspan="4">Yes</td>
+			</tr>
+			<tr>
+				<th>A small star wars trinket</th>
+				<td>No</td>
+				<td colspan="3">Yes</td>
+			</tr>
+			<tr>
+				<th>t-shirt with unique design</th>
+				<td>No</td>
+				<td colspan="3">Yes</td>
+			</tr>
+			<tr>
+				<th>2-4 star wars appearel/accessories</th>
+				<td colspan="2">No</td>
+				<td colspan="2">Yes</td>
+			</tr>
+			<tr>
+				<th>A 11x17in poster</th>
+				<td colspan="2">No</td>
+				<td colspan="2">Yes</td>
+			</tr>
+			<tr>
+				<th>3 pieces of mysterious gear</th>
+				<td colspan="3">No</td>
+				<td>Yes</td>
+			</tr>
+			<tr>
+				<th>ultra rare collectible</th>
+				<td colspan="3">No</td>
+				<td>Yes</td>
+			</tr>	
+		</tbody>
+	</table>
+
+	<aside>
+		<h2>Return Policy</h2>
+		<p>Once you pay for a subscription and the loot crate is shipped to you there are no returns or refunds. </p>
+	</aside>
+
+	<footer>
+		<p>Austin Allbee &bull; Star Wars &bull; Background from: <a href="https://unsplash.com/photos/Q_RBVFFXR_g">Here</a></p>
+	</footer>
+</body>
+</html>

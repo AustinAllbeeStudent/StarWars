@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/*
+Austin Allbee
+	Project V3
+	5/20/19
+	purpose is to style all pages for mobile
+	*/
+
+
+		/* flex */
+
+	/* M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
+		body is flexbox items in body wrap to new row if no more room */
+	body {
+		width: 100%;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+
+	}
+
+aside {
+	display: flex;
+	flex-flow: column nowrap;
+	/* M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)
+	i used the flex basis, grow and shrink properties so table and aside will display side by side when therres room */
+		-webkit-flex: 1 1 120px;
+		flex: 1 1 120px;
+		padding: 10px;
+	}
+
+	table {
+		margin: 10px;
+		-webkit-flex: 3 1 361px;
+		flex: 3 1 361px;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	header, footer {
+		width: 100%;
+	}
+
+	/* M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
+	i aligned all nav items so they have equal space from each other */
+	nav ul {
+		align-items: center;
+	}
+
+
+
+
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+	this queries for phone screens, is makes the navigation disappear and a navicon appear
+*/
+/*phone styles */
+@media screen and (max-width: 480px) {
+	 header nav ul {
+		display:none;
+	}
+
+	a#navicon {
+		display: block;
+	}
+
+	a#navicon img {
+		width: 20px;
+		height: 20px;
+	}
+
+	/* M5LO4 Use CSS for pull-down menus (or collapsible/expandable areas) (CSS, note where the menu is on your site and how it behaves)
+		this brings the navigation up when you click on navicon */
+	a#navicon:hover+ul, nav ul:hover {
+		display: block;
+	}
+
+
+}
+
+
+
+
+
+
+/* desktop styles */
+
+
+@media screen and (min-width: 481px ) {
+
+	a#navicon {
+		display: none;
+	}
+
+}

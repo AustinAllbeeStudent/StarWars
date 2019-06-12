@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*
+Austin Allbee
+	Project V1
+	4/25/19
+	purpose is to style my about and index page
+	*/
+
+/* reset rules */
+
+	/*M3LO1 Demonstrate the use of CSS reset styles
+	i have reset the style rules for nav */
+nav ul {
+	list-style: none;
+}
+
+a#navicon {
+	display: none;
+}
+
+article, aside, section, footer, header, nav {
+	display: block;
+}
+
+
+/*body styles*/
+/* M4LO2 Demonstrate the use of background images
+	a star picture was used for background */
+html {
+	background-color: black;
+	background-image: url(starBackground.jpg);
+	background-attachment: fixed;
+}
+
+/* M2LO13 Demonstrate how CSS can change presentation of textual elements
+	font-family changes the text */
+body {
+	font-family: Ariel, Verdana, sans-serif;
+	background-color: black;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* M2LO5B Demonstrate contextual selectors (
+	i used * contextual selector for all text in body */
+body * {
+	color: white;
+}
+
+/*M4LO6 Demonstrate the use of opacity/transparency for images
+	i made the logo a little transparent*/
+img.starWarsLogo {
+	opacity: 0.8;
+}
+
+/*M3LO9 Demonstrate fixed, static, or inherited positioning 
+	I used relative positioning to nudge the element way out */
+article#v2 {
+	display: block;
+	position: relative;
+	top: 500px;
+	left: 100px;
+}
+
+
+
+
+
+/*nav styles*/
+/*
+nav {
+	clear: both;
+	width: 100%;
+}
+/* M3LO4 Demonstrate removing container collapse by having a container element with a style rule that expands it around its floated content 
+	the nav is expended so the container doesnt collapse */
+nav::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/*M3LO2 Demonstrate floating elements
+	the nav items float to left. the nav items will appear in a row */
+nav li {
+	display: block;
+	width: 25%;
+	float: left;
+}
+
+/* M2LO5A Demonstrate contextual selector
+	i used partent > child contextual selector for a element */
+
+nav > ul > li > a {
+	text-decoration: none;
+}
+
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id
+	i used the elem[att] to style all links */
+a[href] {
+	color: white;
+}
+/*M2LO15 Apply colors using CSS 
+i make the link hover color yellow */
+a:hover {
+	color: yellow;
+}
+
+
+
+
+
+
+
+
+/*special characters of the week styles*/
+
+/* M2LO3B Demonstrate style inheritance in CSS
+	text section inherits white color from body so i have to change it to black */
+ section.characterSection *{
+	color: black;
+}
+
+/*M2LO6B  Demonstrate a CSS class selector
+	i used class selector to make background white */
+
+section.characterSection {
+/*M2LO14 Demonstrate and explain the use of progressive enhancement in CS
+	i made the background a transparent white and then regular white if that doesnt work */
+	background-color: white;
+	background-color: rgba(255,255,255,0.8);
+}
+
+/* M2LO12 Demonstrate how CSS can change presentation of page elements
+	padding puts more space around articles */
+section.characterSection article {
+	padding: 20px 10px;
+
+	/*M3LO11 Demonstrate -prefix- style browser extensions use in CSS
+		the articles for the special characters use box-sizing*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* M2LO6A  Demonstrate a CSS id selector
+	i used id selector to style title */
+section#weekSpecialCharacters h2 {
+	color: yellow;
+}
+
+/* M2LO11A Demonstrate a pseudo-class selector
+	i used first-of-type selector */
+section#weekSpecialCharacters ol li:first-of-type {
+	font-size: 2em;
+}
+
+/* M2LO11B Demonstrate a pseudo-element selector 
+	i used nth-of-type selector */
+section#weekSpecialCharacters ol li:nth-of-type(2) {
+	font-size: 1.5em;
+}
+
+
+
+/* news section styles*/
+section#newsSection {
+	display: block;
+	width: 70%;
+	float: left;
+}
+
+
+
+section#newsSection img, h3, p, figure {
+	margin-left: 5%;
+}
+
+/*M4LO5 Demonstrate the use of text or box shadowing
+	yellow text shadow on h3. This makes the h3 titles stand out more. */
+section#newsSection h3 {
+	text-shadow: yellow 0px 0px 10px;
+}
+
+/*M4LO3 Demonstrate the use of rounded corners for borders (
+	the img have rounded yellow borders*/
+article.ahsokaArticle > img {
+	width: 70%;
+	border: 5px solid yellow;
+	border-radius: 10px;
+}
+
+
+/*M4LO8 Demonstrate the use of transformations for 2D or 3D images
+	the image is moved to the right 80px */
+article.ahsokaArticle img#ahsoka3 {
+	transform: translateX(80px);
+}
+
+section#newsSection figure {
+	width: 80%;
+}
+
+section#newsSection figure img {
+	width: 100%;
+	display: block;
+}
+section#newsSection figure figcaption {
+	font-size: 3em;
+	width: 100%;
+	margin-left: 5%;
+	margin-bottom: 10%;
+	background-color: white;
+	background-color: rgba(255,255,255,0.8);
+	color: black;
+}
+
+
+
+
+
+
+/*more news aside styles*/
+
+/*M3LO8 Demonstrate absolute or relative positioning
+	i used relative position to move more news. the element appears further down the page */
+aside#moreNews {
+	display: block;
+	width: 30%;
+	float: left;
+	position: relative;
+	top: 300px;
+	/*M4LO4 Demonstrate the use of gradients
+		i used a gradient background in aside*/
+	background: linear-gradient(rgb(114, 114, 114) 50%, rgba(0, 0, 0, 0) );
+}
+
+
+
+/*footer style*/
+/*M3LO2 Demonstrate floating elements
+	the section is cleared on the left the footer will go to the bottom instead of appearing on the side*/
+footer {
+	clear: both;
+	padding-bottom: 20px;
+
+}
+
+footer p{
+	text-align: center;
+}

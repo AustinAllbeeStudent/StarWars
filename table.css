@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*
+Austin Allbee
+	Project V3
+	5/20/19
+	purpose is to style my loot crate table
+	*/
+
+h1 {
+		text-align: center;
+}
+
+/* M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+	i made the table have yellow borders */
+
+table {
+	border: 5px solid yellow;
+}
+
+th, td {
+	border: 3px solid yellow;
+	line-height: 1.4em;
+	padding: 8px;
+	text-align: center;
+}
+
+tfoot tr th, tfoot tr td {
+	background-color: white;
+	color: black;
+	font-size: 1.5em;
+}
+
+
+colgroup col#firstCol {
+	background-color: gray;
+	color: black;
+}
+
