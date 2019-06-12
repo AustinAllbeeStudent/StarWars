@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!--
+		Austin Allbee
+		Project V4
+		6/11/19
+		This is the loot crate order page
+		-->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="lootCrateOrderStyles.css">
+		<title>Star Wars loot crate</title>
+		<meta name="viewport" content="width-device-width, initial-scale=1" >
+	  <meta name="description" content= "Page about Star Wars loot crates">
+	  <meta name="keywords" content="Star Wars">
+	  <meta name="author" content="Austin Allbee">
+	</head>
+	<body>	
+		<header>
+			<h1>Ordering Loot Crates</h1>
+			<nav>
+				<a id="navicon" href="#"><img src="navicon.png" alt=""></a>
+				<ul>
+					<li><a href="index.html">Home page</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="lootcrate.html">Loot Crates</a></li>
+					<li><a href="orderLootCrate.html">Order a Loot Crate</a></li>
+					<li><a href="about.html">About page</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="formSection">
+			<h1>Order Form</h1>
+			<form method="get" action="thankYouOrder.html">
+				<fieldset id="customerInfo">
+					<legend>Your Information</legend>
+					<!--M7LO5 Demonstrate the use of a text box in a form
+						I used two text boxes for first and last name -->
+					<div class="formRow">
+						<label for="fnBox">First Name*</label>
+						<input type="text" name="firstName" id="fnBox" required>
+					</div>
+
+					<div class="formRow">
+						<label for="lnBox">Last Name*</label>
+						<input type="text" name="lastName" id="lnBox" required>
+					</div>
+
+					<div class="formRow">
+						<!-- M7LO9 Demonstrate the use of a text area in a form
+							Textbox is used to fill in address -->
+						<label for="addBox">Address*</label>
+						<textarea name="address" id="addBox" required></textarea> 
+					</div>
+
+					<div class="formRow">
+					<!-- M7LO8 Demonstrate the use of a selection list in a form
+						A selection list is used for picking a country to ship to -->
+					<label for="countryList">Country</label>
+						<select id="countryList" name="country">
+							<option value="unitedStates">United States</option>
+							<option value="unitedKingdom">United Kingdom</option>
+							<option value="canada">Canada</option>
+							<option value="russia">Russia</option>
+						</select>
+					</div>
+
+					<div class="formRow">
+						<label for="mailBox"> Email*</label>
+						<input type="email" name="email" id="mailBox" required>
+					</div>
+				</fieldset>
+				<!-- M7LO7 Demonstrate the use of radio buttons in a form
+					I used radio buttons to select loot crate options -->
+				<fieldset class="lootCrateOptions">
+					<legend>Pick a loot crate</legend>
+					<label for="younglingCrate">Youngling Crate</label>
+					<input id="younglingCrate" value="youngling" type="radio" name="crateSelection">
+
+					<label for="padawanCrate">Padawan Crate</label>
+					<input id="padawanCrate" value="padawan" type="radio" name="crateSelection" checked>
+
+					<label for="knightCrate">Knight Crate</label>
+					<input id="knightCrate" value="knight" type="radio" name="crateSelection">
+
+					<label for="grandMasterCrate">Grand Master Crate</label>
+					<input id="grandMasterCrate" value="grandMaster" type="radio" name="crateSelection">
+				</fieldset> 
+
+				<!-- M7LO6 Demonstrate the use of check boxes in a form
+					I used a checkbox to sign customers up for emails -->
+				<div id="mailingCheckbox">
+					<label for="mailingList">Sign me up for loot crate discounts and news!</label>
+					<input id="mailingList" type="checkbox" name="mailMe" value="yes" checked>
+				</div>
+
+				<!-- M7LO10 Demonstrate the use of a submit button in a form
+					this button will submit the form -->
+				<p id="submitButton"><input type="submit" value="Order my Loot Crate!"></p>
+			</form>
+		</section>
+		
+
+
+		<footer>
+			<p>Austin Allbee &bull; Star Wars &bull; Background from: <a href="https://unsplash.com/photos/Q_RBVFFXR_g">Here</a></p>
+		</footer>
+	</body>
+</html>
+
+
+
+video from https://pixabay.com/videos/star-wars-parody-earth-explosion-1964/

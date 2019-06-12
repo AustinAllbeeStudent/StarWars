@@ -1,108 +1,109 @@
-<!--
-	Austin Allbee
-	Project V1
-	4/25/19
-	This is the homepage
--->
-
-<!--
-	M1LO6: Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item is satisfied if your HTML file has content with at least 3 different elements used appropriately, and validates correctly) 
-	I usee basic tags Like html, head, body, and title tag.
--->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!--
-		M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)
-		I used the link tag to connect the css doc. -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	
-	<title>Star Wars Home</title>
-	<meta charset="UTF-8">
-
-  <meta name="description" content= "Page about Star Wars">
-  <meta name="keywords" content="Star Wars">
-  <meta name="author" content="Austin Allbee">
-
-	<!--M2LO4A Demonstrate embedded styles
-		i've embedded styles for an img -->
-  <style>
-  	img.starWarsLogo {
-  		width: 50%;
-  		display: block;
-  		margin-left: auto;
- 		margin-right: auto;
-  	}
-  </style>
-</head>
-<body>	
-	<header>
-		<h1>Star Wars</h1>
-		<nav>
-			<a id="navicon" href="#"><img src="navicon.png" alt=""></a>
-			<!-- M1LO12 Create navigation using unordered lists (HTML)
-				I have used an unordered list in my navigation -->
-			<ul>
-				<li><a href="index.html">Home page</a></li>
-				<!--M1LO13A Demonstrate a hyperlink to another page on your site (site navigation) (HTML)
-					I made a link to the about page -->
-				<li><a href="news.html">News</a></li>
-				<li><a href="lootcrate.html">Loot Crates</a></li>
-				<li><a href="about.html">About page</a></li>
-				
-			</ul>
-		</nav>
-	</header>
-		<p><em>This page is deducated in helping people understand starwars alot better. We will explore the history in depth and go into some fun fan theories.</em></p>
+	<head>
+		<meta charset="UTF-8">
 		<!--
-			M1LO9 Demonstrate the use of inline images (HTML).
-			I have my own image of the starwars logo.
+		Austin Allbee
+		Project V1
+		4/25/19
+		This is the homepage
 		-->
-		<img class="starWarsLogo" src="starwarslogo.png" alt="Star Wars logo" />
-		<p>Image from <a href="https://en.wikipedia.org/wiki/File:Star_Wars_Logo.svg">https://en.wikipedia.org/wiki/File:Star_Wars_Logo.svg</a></p>
 
-		<aside><p> Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. The film series, consisting of three trilogies and a stand-alone anthology series, has spawned an extensive media franchise called the Expanded Universe including books, television series, computer and video games, and comic books. These supplements to the franchise resulted in significant development of the series' fictional universe, keeping the franchise active in the 16-year interim between the two film trilogies. The franchise depicts a galaxy described as far, far away in the distant past, and it commonly portrays Jedi as a representation of good, in conflict with the Sith, their evil counterpart. Their weapon of choice, the lightsaber, is commonly recognized in popular culture. The franchise's storylines contain many themes, with strong influences from philosophy and religion.</p> <p>Text from https://en.wikiquote.org/wiki/Star_Wars</p></aside>
-		<section id="weekSpecialCharacters">
-			<h2>
-				This week's special characters!
-			</h2>
+		<!--
+			M1LO6: Demonstrate the use of basic HTML tags to create a simple Web page (HTML, this item is satisfied if your HTML file has content with at least 3 different elements used appropriately, and validates correctly) 
+			I usee basic tags Like html, head, body, and title tag.
+		-->
+
+		<!--
+			M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)
+			I used the link tag to connect the css doc. -->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+
+		
+		<title>Star Wars Home</title>
+
+	  	<meta name="description" content= "Page about Star Wars">
+	 	<meta name="keywords" content="Star Wars">
+	 	<meta name="author" content="Austin Allbee">
+
+		<!--M2LO4A Demonstrate embedded styles
+			i've embedded styles for an img -->
+	  	<style>
+	  		img.starWarsLogo {
+		  		width: 50%;
+		  		display: block;
+		  		margin-left: auto;
+		 		margin-right: auto;
+	  	}
+	  	</style>
+	</head>
+	<body>	
+		<header>
+			<h1>Star Wars</h1>
+			<nav>
+				<a id="navicon" href="#"><img src="navicon.png" alt=""></a>
+				<!-- M1LO12 Create navigation using unordered lists (HTML)
+					I have used an unordered list in my navigation -->
+				<ul>
+					<li><a href="index.html">Home page</a></li>
+					<!--M1LO13A Demonstrate a hyperlink to another page on your site (site navigation) (HTML)
+						I made a link to the about page -->
+					<li><a href="news.html">News</a></li>
+					<li><a href="lootcrate.html">Loot Crates</a></li>
+					<li><a href="orderLootCrate.html">Order a Loot Crate</a></li>
+					<li><a href="about.html">About page</a></li>					
+				</ul>
+			</nav>
+		</header>
+			<p><em>This page is deducated in helping people understand starwars alot better. We will explore the history in depth and go into some fun fan theories.</em></p>
 			<!--
-				M1LO7 Demonstrate the use of ordered lists (HTML).
-				Below i created an ordered list with list items. -->
-			<ol>
-				<!-- M1LO13B Demonstrate a hyperlink to a targeted location using ids (HTML)
-					links go to articles with ids -->
-				<li> <a href="#darthBane">Darth bane</a> </li>
-				<li><a href="#darthVader">Darth Vader</a></li>
-				<li><a href="#darthRevan">Darth Revan</a>	</li>
-			</ol>
-		</section>
-		<section class="characterSection">
-			<article id="darthBane">
-				<h2>Darth Bane</h2>
-				<p>Darth Bane was a legendary human male Dark Lord of the Sith and the sole survivor of the destruction of the Sith at the hands of the Jedi Order during the Jedi–Sith war a thousand years before the Clone Wars. As the only surviving Sith, Bane recognized that Sith infighting had weakened them to the point that the Jedi could destroy them. To rectify this, Bane reformed the Sith and created the Rule of Two, mandating that there could be only two Sith—a Master and an apprentice—at any given time. These new Sith would begin a plot to destroy the Jedi in secret. With Bane's defeat, the Jedi wrongly believed that the Sith were defeated with him</p>
-				<p>The vendetta Bane held against the Jedi was fulfilled during the Clone Wars, when Supreme Chancellor Palpatine, secretly the Sith Lord Darth Sidious and a follower of the Rule of Two, transformed the Galactic Republic into the Galactic Empire and destroyed the Jedi Order. However, the victory was short-lived, as the redeemed Jedi Knight Anakin Skywalker, formerly the Sith Lord Darth Vader, defeated the Sith twenty-three years later</p>
-				<!-- M1LO13C Demonstrate a hyperlink to an external page (HTML)
-					this links to the wookiepedia page -->
-				<p>Text from: <a href="https://starwars.fandom.com/wiki/Darth_Bane">https://starwars.fandom.com/wiki/Darth_Bane</a></p>
-			</article>
-			<article id="darthVader">
-				<h2>Darth Vader</h2>
-				<p>Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padmé Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event—only to learn that he had also won his freedom in doing so. </p>
-				<p>Text from: <a href="https://starwars.fandom.com/wiki/Anakin_Skywalker/Legends">https://starwars.fandom.com/wiki/Anakin_Skywalker/Legends</a></p>
-			</article>
-			<article id="darthRevan">
-				<h2>Darth Revan</h2>
-				<p>Revan—renowned as the Revanchist, reviled as Revan the Butcher, worshiped as the Revan, dreaded as the Dark Lord of the Sith Darth Revan, and praised as the Prodigal Knight—was a human male who played pivotal roles as both Jedi and Sith in the Mandalorian Wars, Jedi Civil War, and Great Galactic War. </p>
-				<p>Believed to have been born around 3994 BBY in the Outer Rim Territories, the child later known as Revan was found by the Jedi Order and apprenticed to the Jedi Master Kreia. The Padawan had an insatiable hunger for knowledge and soon became the Jedi’s most promising pupil. Alongside his friend Malak, he became a Jedi Knight and a vocal and charismatic critic of the Order's inactivity in the ongoing Mandalorian Wars between the Galactic Republic and the Mandalorian Neo-Crusaders. In defiance of the Jedi Council, the Knight took upon the name Revan and started the Revanchist movement to combat the Mandalorians as the Republic Military's Supreme Commander. Revan and his forces gradually pushed back the Mandalorians, saving countless worlds at the price of devastating moral compromises and the embrace of dark side practices. On Malachor V, Revan defeated the Mandalorian leader Mandalore the Ultimate in single-combat and ordered the activation of the Mass Shadow Generator superweapon, destroying both armies and the planet but winning the war in the process. </p>
-				<p>Text from: <a href ="https://starwars.fandom.com/wiki/Revan">https://starwars.fandom.com/wiki/Revan</a></p>
-			</article>
-		</section>
-	<footer>
-		<!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)
-			I have used a bullet character -->
-		<p>Austin Allbee &bull; Star Wars &bull; Background from: <a href="https://unsplash.com/photos/Q_RBVFFXR_g">Here</a></p>
-	</footer>
-</body>
+				M1LO9 Demonstrate the use of inline images (HTML).
+				I have my own image of the starwars logo.
+			-->
+			<img class="starWarsLogo" src="starwarslogo.png" alt="Star Wars logo" />
+			<p>Image from <a href="https://en.wikipedia.org/wiki/File:Star_Wars_Logo.svg">https://en.wikipedia.org/wiki/File:Star_Wars_Logo.svg</a></p>
+
+			<aside><p> Star Wars is an American epic space opera franchise centered on a film series created by George Lucas. The film series, consisting of three trilogies and a stand-alone anthology series, has spawned an extensive media franchise called the Expanded Universe including books, television series, computer and video games, and comic books. These supplements to the franchise resulted in significant development of the series' fictional universe, keeping the franchise active in the 16-year interim between the two film trilogies. The franchise depicts a galaxy described as far, far away in the distant past, and it commonly portrays Jedi as a representation of good, in conflict with the Sith, their evil counterpart. Their weapon of choice, the lightsaber, is commonly recognized in popular culture. The franchise's storylines contain many themes, with strong influences from philosophy and religion.</p> <p>Text from https://en.wikiquote.org/wiki/Star_Wars</p></aside>
+			<section id="weekSpecialCharacters">
+				<h2>
+					This week's special characters!
+				</h2>
+				<!--
+					M1LO7 Demonstrate the use of ordered lists (HTML).
+					Below i created an ordered list with list items. -->
+				<ol>
+					<!-- M1LO13B Demonstrate a hyperlink to a targeted location using ids (HTML)
+						links go to articles with ids -->
+					<li> <a href="#darthBane">Darth bane</a> </li>
+					<li><a href="#darthVader">Darth Vader</a></li>
+					<li><a href="#darthRevan">Darth Revan</a>	</li>
+				</ol>
+			</section>
+			<section class="characterSection">
+				<article id="darthBane">
+					<h2>Darth Bane</h2>
+					<p>Darth Bane was a legendary human male Dark Lord of the Sith and the sole survivor of the destruction of the Sith at the hands of the Jedi Order during the Jedi–Sith war a thousand years before the Clone Wars. As the only surviving Sith, Bane recognized that Sith infighting had weakened them to the point that the Jedi could destroy them. To rectify this, Bane reformed the Sith and created the Rule of Two, mandating that there could be only two Sith—a Master and an apprentice—at any given time. These new Sith would begin a plot to destroy the Jedi in secret. With Bane's defeat, the Jedi wrongly believed that the Sith were defeated with him</p>
+					<p>The vendetta Bane held against the Jedi was fulfilled during the Clone Wars, when Supreme Chancellor Palpatine, secretly the Sith Lord Darth Sidious and a follower of the Rule of Two, transformed the Galactic Republic into the Galactic Empire and destroyed the Jedi Order. However, the victory was short-lived, as the redeemed Jedi Knight Anakin Skywalker, formerly the Sith Lord Darth Vader, defeated the Sith twenty-three years later</p>
+					<!-- M1LO13C Demonstrate a hyperlink to an external page (HTML)
+						this links to the wookiepedia page -->
+					<p>Text from: <a href="https://starwars.fandom.com/wiki/Darth_Bane">https://starwars.fandom.com/wiki/Darth_Bane</a></p>
+				</article>
+				<article id="darthVader">
+					<h2>Darth Vader</h2>
+					<p>Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padmé Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event—only to learn that he had also won his freedom in doing so. </p>
+					<p>Text from: <a href="https://starwars.fandom.com/wiki/Anakin_Skywalker/Legends">https://starwars.fandom.com/wiki/Anakin_Skywalker/Legends</a></p>
+				</article>
+				<article id="darthRevan">
+					<h2>Darth Revan</h2>
+					<p>Revan—renowned as the Revanchist, reviled as Revan the Butcher, worshiped as the Revan, dreaded as the Dark Lord of the Sith Darth Revan, and praised as the Prodigal Knight—was a human male who played pivotal roles as both Jedi and Sith in the Mandalorian Wars, Jedi Civil War, and Great Galactic War. </p>
+					<p>Believed to have been born around 3994 BBY in the Outer Rim Territories, the child later known as Revan was found by the Jedi Order and apprenticed to the Jedi Master Kreia. The Padawan had an insatiable hunger for knowledge and soon became the Jedi’s most promising pupil. Alongside his friend Malak, he became a Jedi Knight and a vocal and charismatic critic of the Order's inactivity in the ongoing Mandalorian Wars between the Galactic Republic and the Mandalorian Neo-Crusaders. In defiance of the Jedi Council, the Knight took upon the name Revan and started the Revanchist movement to combat the Mandalorians as the Republic Military's Supreme Commander. Revan and his forces gradually pushed back the Mandalorians, saving countless worlds at the price of devastating moral compromises and the embrace of dark side practices. On Malachor V, Revan defeated the Mandalorian leader Mandalore the Ultimate in single-combat and ordered the activation of the Mass Shadow Generator superweapon, destroying both armies and the planet but winning the war in the process. </p>
+					<p>Text from: <a href ="https://starwars.fandom.com/wiki/Revan">https://starwars.fandom.com/wiki/Revan</a></p>
+				</article>
+			</section>
+		<footer>
+			<!-- M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)
+				I have used a bullet character -->
+			<p>Austin Allbee &bull; Star Wars &bull; Background from: <a href="https://unsplash.com/photos/Q_RBVFFXR_g">Here</a></p>
+		</footer>
+	</body>
 </html>

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*
+Austin Allbee
+	Project V4
+	6/11/19
+	purpose is to style my orderLootCrate.html and thankYouOrder.html
+	*/
+
+/* form styles*/
+
+/*M7LO11 Demonstrate how to format a form with CSS
+	form styles make everything display vertically and everything has space around it */
+
+section#formSection {
+	padding: 20px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#formSection h1 {
+	font-size: 3.0em;
+	text-align: center;
+}
+
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 10px;
+}
+
+fieldset {
+	margin: 40px 0px;
+}
+
+legend {
+	font-size: 1.5em;
+	color: yellow;
+}
+
+form label {
+	margin: 5px;
+	font-size: 1.2em;
+}
+
+input, textarea, select, option {
+	color: black;
+	font-size: 1.2em;
+}
+
+div.formRow > * {
+	-webkit-flex: 1 1 100px;
+	flex: 1 1 100px;
+}
+
+form textarea {
+	height: 70px;
+	width: 70%;
+}
+
+div#mailingCheckbox {
+	text-align: center;
+	margin: 20px 0px;
+}
+
+p#submitButton {
+	text-align: center;
+
+}
+
+
+
+/*media styles */
+
+/* M8LO12 Demonstrate how to format media with CSS
+ 	audio styles make audio display centered and stretched out more.
+ 	iframe styles make it so the width spans the entire aside element. */
+section#thankYou audio {
+	display: block;
+	margin: 20px auto;
+	width: 70%;
+}
+
+aside#congradulationsYoutube iframe {
+	width: 100%;
+}
+
+
+/* thank you page styles */
+
+section#thankYou, aside#congradulationsYoutube {
+	display: block;
+	float: left;
+	margin: 100px 0px;
+}
+
+section#thankYou {
+	width: 60%;
+}
+
+aside#congradulationsYoutube {
+	width: 40%;
+}
+
+
+
+section#thankYou h1 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#thankYou p {
+	text-align: center;
+}
+
+
+
+/* transition styles for thank you */
+
+/* M8LO10 Demonstrate a CSS animation or transition
+	this makes my text transition from yellow to big, blue and spaced out */
+section#thankYou h1 a {
+	font-size: 1.5em;
+	color: yellow;
+	letter-spacing: 0em;
+	transition: font-size 1.5s ease,
+				color 1s ease 1s,
+				letter-spacing 1s cubic-bezier(0.6, 0,0.8,0.5);
+
+}
+
+section#thankYou h1 a:hover {
+	font-size: 2.0em;
+	color: blue;
+	letter-spacing: 0.1em;
+}
